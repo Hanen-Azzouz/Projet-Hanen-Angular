@@ -1,0 +1,30 @@
+<p>addproduct works!</p>
+<form #f="ngForm">
+    <label><b>ID</b></label>
+    <input type="number" name="id" ngModel #id="ngModel"required [(ngMode)l]="product.id"><br>
+    <div *ngIf=" id.invalid && id.touched")>
+        Msg erreur
+        
+    </div>
+    <label><b>Title</b></label>
+    <input type="text" name="title" ngModel #title="ngModel" required minlength="3"[(ngMode)l]="product.titre"><br>
+       <div *ngIf="title.invalid ">
+          <div *ngIf="title.errors?.['required']">
+             required
+          </div>
+          <div *ngIf="title.errors?.['minlength']">
+             minlength
+          </div>
+       </div>
+
+    
+    <label><b>Quantity</b></label>
+    <input type="number" name="quantity" ngModel[(ngMode)l]="product.quantity"><br>
+    <label><b>Price</b></label>
+    <input type="number" name="price" ngModel[(ngMode)l]="product.prix"><br><br>
+    
+     <!--pour voir si le formulaire est valide ou non-->
+    <input type="submit"value="Save"(click)="ajouter(f.value)" >
+    <!--pour recupérer les valeurs du formulaire
+    <input type="submit"value="Save"(click)="showform(f.value)">/////[disabled]="f.invalid-->
+</form>

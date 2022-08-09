@@ -1,0 +1,31 @@
+{
+  "produits": [
+    {
+      "id": 1,
+      "titre": "produit 1",
+      "prix": "23","quantity":"15","like":0},
+    {"id":2,
+      "titre": "produi 2",
+      "prix": "30","quantity":"65","like":1},
+
+
+      {"id":3,
+        "titre": "produit 3",
+        "prix": "40","quantity":"100","like":4},
+        {"id":4,
+          "titre": "produit 4",
+          "prix": "50","quantity":"75","like":3}
+              ],
+  
+    "etudiants":[
+    {"id":1,
+    "nom":"azzouz",
+  "prenom":"hanen"},
+  {"id":2,
+    "nom":"azzouz",
+  "prenom":"yosr"},
+  {"id":3,
+    "nom":"azzouz",
+  "prenom":"cyrine"}
+   ]
+ }

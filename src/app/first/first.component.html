@@ -1,0 +1,15 @@
+<p>first works!</p>
+<h1>Bonjour {{name}}</h1>
+<div [style.backgroundColor]="color">
+ <!-- <div [style.backgroundColor]="getColor()">-->
+Hanen 2Cinfo4
+</div>
+<!--property binding-->
+<!--<input type="submit" value="send" [disabled]="enabled">-->
+<!--event binding-->
+<!--<input type="text"[(ngModel)]='color' >-->
+<input type="text"#val>
+<input type="submit" value="send" (click)="changecolor(val.value)">
+<!--<input type="submit" value="send" (click)="showmsg()">-->
+<input type="submit" value="afficher1"(click)="affichermsg1()">
+<input type="submit" value="afficher2"(click)="affichermsg2()">
